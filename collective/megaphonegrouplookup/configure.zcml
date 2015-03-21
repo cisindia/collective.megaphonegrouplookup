@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup">
+
+  <include package="collective.megaphone"/>
+  <include file="meta.zcml"/>
+  <include package=".browser"/>
+
+    <genericsetup:registerProfile
+      name="default"
+      title="collective.megaphonegrouplookup"
+      directory="profiles/default"
+      description="Group looking mechanism for Megaphone"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+</configure>

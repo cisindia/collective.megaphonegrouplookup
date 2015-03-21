@@ -1,0 +1,11 @@
+<div id='megaphone-grouplookup-autocomplete'>
+   <p><span tal:content="view/form_label">Your letter will be sent to:</span>
+   <script tal:content="structure options/script">
+   </script>
+   <input tal:attributes="id string:megaphone-group-${options/name};
+                           name string:megaphone-group-${options/name}"/>
+   </p>
+   <ul tal:attributes="id string:megaphone-group-members-${options/name}">
+   </ul>
+   <br/>
+</div>

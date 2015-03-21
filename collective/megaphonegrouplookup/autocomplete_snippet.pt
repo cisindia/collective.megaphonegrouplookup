@@ -1,0 +1,13 @@
+<div id='megaphone-grouplookup-autocomplete'>
+   <p tal:content="view/form_label">Your letter will be sent to:</p>
+   <script tal:content="structure options/script">
+   </script>
+   Representative : <input id="megaphone-person-ac"/>  Email: <input name="megaphone-person-email" id="megaphone-person-email"
+   readonly="readonly"/>
+   <br/>
+   <div id="megaphone-person-address" style="border: 1px solid #CCCCCC;
+                                             margin: 10px;background:#eeefff;
+                                             padding: 10px;display:none">
+   </div>
+   <br/>
+</div>

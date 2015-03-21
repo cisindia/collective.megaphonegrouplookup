@@ -1,0 +1,39 @@
+<configure
+    xmlns="http://namespaces.zope.org/meta">
+
+  <directives namespace="http://namespaces.inigo-tech.com/megaphonegrouplookup">
+    <directive
+      name="group"
+      schema=".meta.IDataSourceDirective"
+      handler=".meta.managerdatasource_handler"
+      />
+
+    <directive
+      name="group-user"
+      schema=".meta.IDataSourceDirective"
+      handler=".meta.userdatasource_handler"
+      />
+
+    <directive
+      name="group-autocomplete-individual"
+      schema=".meta.IDataSourceDirective"
+      handler=".meta.autocomplete_userdatasource_handler"
+      />
+
+    <directive
+      name="group-autocomplete"
+      schema=".meta.IDataSourceDirective"
+      handler=".meta.autocomplete_groupdatasource_handler"
+      />
+
+    <directive
+      name="custom"
+      schema=".meta.ICustomDataSourceDirective"
+      handler=".meta.datasource_handler"
+      />
+
+
+
+   </directives>
+ 
+</configure> 
